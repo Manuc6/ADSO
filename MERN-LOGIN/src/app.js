@@ -3,10 +3,11 @@ import morgan from 'morgan';
 import authRoutes from './rotes/auth.routes.js';
 import taskRouter from './rotes/task.routes.js';
 import cookieParser from 'cookie-parser';
+import cors from 'cors';
 
 const app = express();
 
-
+app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(cookieParser()); //para manejar y acceder de forma mas sencilla a las cookies

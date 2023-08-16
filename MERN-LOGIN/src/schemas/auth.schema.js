@@ -1,5 +1,5 @@
 import {z} from 'zod';
-export const resgisterSchema = z.object({
+export const registerSchema = z.object({
     username:z.string({
         required_error:"username is required field"
     }),
