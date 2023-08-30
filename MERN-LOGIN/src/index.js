@@ -1,6 +1,7 @@
-import app from './app.js';
-import { connectDB } from './db.js';
+import app from "./app.js";
+import {connect} from "./db.js";
 
+const PORT = 5000;
 
-connectDB();
-app.listen(5000, ()=> console.log(`SERVER ON`));
+connect();
+app.listen(PORT, () => console.log(`Servidor on Port ${PORT}`));

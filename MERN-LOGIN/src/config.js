@@ -1,1 +1,1 @@
-export const TOKEN_SECRET = 'secret123'
+export const TOKEN_SECRET = 'secret123';
